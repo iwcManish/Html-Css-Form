@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <style>
+        body{
+          font-family: Roboto,sans-serif;
+          font-size: large;
+          background-color: #e52165;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        /* .aura{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        } */
+        .main-div{
+          color: aliceblue;
+          border-radius: 8px;
+            background-color:#0d1137;
+            border: 1px solid black;
+            width: 400px;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+  </head>
+  <body >
+    
+    <div class="main-div">
+    <form action="backend.js">
+      <H2>Sign Up :-</H2>
+      <div>Name : <input type="text" name="myName" placeholder="Your Name" required/></div>
+      <br />
+      <div>Email : <input type="email" name="myEmail" placeholder="Your Email" required /></div>
+      <br />
+      <div>Phone No : <input type="number" name="myPhoneNo" placeholder="Your Phone number" required/></div>
+      <br />
+      <div>Password : <input type="password" name="myPassword" placeholder="Enter Password" required /></div>
+      <br />
+      <div>
+        Gender : Male <input type="radio" name="myGender" /> 
+        Female<input type="radio" name="myGender" required /> 
+        Others<input type="radio" name="myGender" required/>
+      </div>
+      <br />
+      <div>Are you Indian : <input type="checkbox" name="myNationality" required/></div>
+      <br />
+      <div>Date of Birth : <input type="date" name="myDateofbirth" required/></div><BR></BR>
+       Car : <select name="myCar">
+         <option value="">--Choose Your Car--</option>
+          <option value="sft">Swift</option><br>
+          <option value="mrt">Maruti</option><br>
+      </select><br><br>
+      <div ><input type="submit" value="Sign Up" />
+        &nbsp;<input type="reset" value="clear" /></div>
+    </form>
+</div>
+<!-- </div> -->
+  </body>
+</html>
